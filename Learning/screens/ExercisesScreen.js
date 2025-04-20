@@ -18,5 +18,24 @@ export default function ExercisesScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20 },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#121212',
+    padding: 20,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    color: '#ffffff',
+    textAlign: 'center',
+  },
+  text: {
+    fontSize: 16,
+    color: '#dddddd',
+    textAlign: 'center',
+    marginBottom: 20,
+  },
 });

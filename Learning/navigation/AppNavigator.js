@@ -14,13 +14,13 @@ const Stack = createNativeStackNavigator();
 export default function AppNavigator() {
   return (
     <Stack.Navigator initialRouteName="Welcome">
-      <Stack.Screen name="Welcome" component={WelcomeScreen} />
-      <Stack.Screen name="Selection" component={SelectionScreen} />
-      <Stack.Screen name="Lessons" component={LessonsScreen} />
-      <Stack.Screen name="LessonDetail" component={LessonDetailScreen} />
-      <Stack.Screen name="Demo" component={DemoScreen} />
-      <Stack.Screen name="Exercises" component={ExercisesScreen} />
-      <Stack.Screen name="ExerciseDetail" component={ExerciseDetailScreen} />
+      <Stack.Screen name="Welcome" component={WelcomeScreen} options={{ headerStyle: { backgroundColor: '#121212' }, headerTintColor: '#ffffff' }} />
+      <Stack.Screen name="Selection" component={SelectionScreen} options={{ headerStyle: { backgroundColor: '#121212' }, headerTintColor: '#ffffff' }} />
+      <Stack.Screen name="Lessons" component={LessonsScreen} options={{ headerStyle: { backgroundColor: '#121212' }, headerTintColor: '#ffffff' }} />
+      <Stack.Screen name="LessonDetail" component={LessonDetailScreen} options={{ headerStyle: { backgroundColor: '#121212' }, headerTintColor: '#ffffff' }} />
+      <Stack.Screen name="Demo" component={DemoScreen} options={{ headerStyle: { backgroundColor: '#121212' }, headerTintColor: '#ffffff' }} />
+      <Stack.Screen name="Exercises" component={ExercisesScreen} options={{ headerStyle: { backgroundColor: '#121212' }, headerTintColor: '#ffffff' }} />
+      <Stack.Screen name="ExerciseDetail" component={ExerciseDetailScreen} options={{ headerStyle: { backgroundColor: '#121212' }, headerTintColor: '#ffffff' }} />
     </Stack.Navigator>
   );
 }

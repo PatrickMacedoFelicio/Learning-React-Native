@@ -8,7 +8,6 @@ export default function LessonDetailScreen({ route }) {
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>{lesson.title}</Text>
       <Text style={styles.description}>{lesson.description}</Text>
-      <Text style={styles.description}>{lesson.more_description}</Text>
       <Text style={styles.code}>{lesson.code}</Text>
     </ScrollView>
   );
@@ -17,21 +16,24 @@ export default function LessonDetailScreen({ route }) {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
+    backgroundColor: '#121212',
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 10,
+    color: '#ffffff',
   },
   description: {
     fontSize: 16,
     marginBottom: 10,
-    textAlign: 'justify',
+    color: '#bbbbbb',
   },
   code: {
     fontFamily: 'monospace',
-    backgroundColor: '#f0f0f0',
     padding: 10,
     borderRadius: 5,
+    backgroundColor: '#1e1e1e',
+    color: '#ffffff',
   },
 });

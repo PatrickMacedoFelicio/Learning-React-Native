@@ -25,22 +25,25 @@ export default function ExerciseDetailScreen({ route }) {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
+    backgroundColor: '#121212',
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 10,
+    color: '#ffffff',
   },
   description: {
     fontSize: 16,
     marginBottom: 10,
+    color: '#dddddd',
   },
   code: {
     fontFamily: 'monospace',
-    backgroundColor: '#eaeaea',
     padding: 10,
     borderRadius: 5,
-    marginVertical: 10,
+    backgroundColor: '#1e1e1e',
+    color: '#ffffff',
   },
   answerBox: {
     marginTop: 15,
@@ -53,3 +56,4 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+

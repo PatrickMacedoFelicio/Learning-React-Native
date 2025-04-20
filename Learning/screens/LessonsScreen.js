@@ -18,5 +18,5 @@ export default function LessonsScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20 },
+  container: { flex: 1, padding: 20,  backgroundColor: '#121212',},
 });
