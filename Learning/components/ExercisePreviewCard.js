@@ -15,18 +15,21 @@ export default function ExercisePreviewCard({ exercise, navigation }) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#fb2576',
     padding: 15,
     borderRadius: 10,
     marginBottom: 20,
     elevation: 3,
+  
   },
   title: {
     fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 5,
+    color: '#ffffff',
   },
   description: {
     fontSize: 14,
+    color: '#ffffff',
   },
 });

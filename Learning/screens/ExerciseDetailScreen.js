@@ -11,7 +11,7 @@ export default function ExerciseDetailScreen({ route }) {
       <Text style={styles.description}>{exercise.description}</Text>
       <Text style={styles.description}>{exercise.teste}</Text>
       <Text style={styles.code}>{exercise.code}</Text>
-      <Button title="Ver Resposta" onPress={() => setShowAnswer(true)} />
+      <Button title="Ver Resposta" onPress={() => setShowAnswer(true)} color="#fb2576"/>
       {showAnswer && (
         <View style={styles.answerBox}>
           <Text style={styles.answerTitle}>Resposta:</Text>
@@ -44,16 +44,22 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     backgroundColor: '#1e1e1e',
     color: '#ffffff',
+    borderWidth: 2,
+    borderColor: '#fb2576',
+    marginTop: 5,
+    marginBottom: 15,
   },
   answerBox: {
     marginTop: 15,
-    backgroundColor: '#d1ffd6',
+    backgroundColor: '#fb2576',
     padding: 10,
     borderRadius: 8,
   },
   answerTitle: {
     fontWeight: 'bold',
     marginBottom: 5,
+    color: '#ffffff',
+    fontSize: 16,
   },
 });
 

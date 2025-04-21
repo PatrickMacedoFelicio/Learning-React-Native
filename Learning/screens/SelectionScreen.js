@@ -7,12 +7,12 @@ export default function SelectionScreen({ navigation }) {
       <Text style={styles.title}>Aprenda 📚</Text>
       <Text style={styles.texto}>alsdflasdlfasl lasflsdfals dfla sldfa slfals flas dfla sldf asldfl asldllsadflas</Text>
       <View style={styles.buttonContainer}>
-        <Button title="Aprender Conceitos" onPress={() => navigation.navigate('Lessons')}/>
+        <Button title="Aprender Conceitos" onPress={() => navigation.navigate('Lessons')} color="#FB2576"/>
       </View>
       <Text style={styles.title}>Pratique 👨🏻‍💻</Text>
       <Text style={styles.texto}>alsdflasdlfasl lasflsdfals dfla sldfa slfals flas dfla sldf asldfl asldllsadflas</Text>
       <View style={styles.buttonContainer}>
-        <Button title="Exercícios Práticos" onPress={() => navigation.navigate('Exercises')}/>
+        <Button title="Exercícios Práticos" onPress={() => navigation.navigate('Exercises')} color="#FB2576"/>
       </View>
     </View>
   );
@@ -38,8 +38,9 @@ const styles = StyleSheet.create({
     color: '#ffffff',
   },
   buttonContainer: {
-    marginVertical: 10,
+    marginTop: 10,
     width: '70%',
     fontSize: 20,
+    marginBottom: 20,
   },
 });

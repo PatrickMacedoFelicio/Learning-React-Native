@@ -6,7 +6,7 @@ export default function WelcomeScreen({ navigation }) {
     <View style={styles.container}>
       <Text style={styles.title}>Bem-vindo ao Mini Tutorial de React Native</Text>
       <Text style={styles.text}>Este app ajudará você a aprender os conceitos básicos de React Native de forma simples e interativa.</Text>
-      <Button title="Começar" onPress={() => navigation.navigate('Selection')} color="#1e90ff" />
+      <Button title="Começar" onPress={() => navigation.navigate('Selection')} color="#FB2576" />
     </View>
   );
 }

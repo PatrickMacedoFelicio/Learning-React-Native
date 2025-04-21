@@ -15,7 +15,7 @@ export default function LessonCard({ lesson, navigation }) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#d6ecff',
+    backgroundColor: '#fb2576',
     padding: 15,
     borderRadius: 10,
     marginBottom: 20,
@@ -25,8 +25,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 5,
+    color: '#ffffff',
   },
   description: {
     fontSize: 14,
+    color: '#ffffff',
   },
 });
