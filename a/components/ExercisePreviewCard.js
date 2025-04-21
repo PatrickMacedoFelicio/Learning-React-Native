@@ -15,7 +15,7 @@ export default function ExercisePreviewCard({ exercise, navigation }) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#e5286a',
+    backgroundColor: '#fb2576',
     padding: 15,
     borderRadius: 10,
     marginBottom: 20,

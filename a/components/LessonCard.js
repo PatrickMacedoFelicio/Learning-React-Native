@@ -1,26 +1,25 @@
 import React from 'react';
 import { View, Text, StyleSheet, Pressable } from 'react-native';
 
-export default function ExercisePreviewCard({ exercise, navigation }) {
+export default function LessonCard({ lesson, navigation }) {
   return (
     <Pressable
       style={styles.card}
-      onPress={() => navigation.navigate('ExerciseDetail', { exercise })}
+      onPress={() => navigation.navigate('LessonDetail', { lesson })}
     >
-      <Text style={styles.title}>{exercise.title}</Text>
-      <Text style={styles.description}>{exercise.description}</Text>
+      <Text style={styles.title}>{lesson.title}</Text>
+      <Text style={styles.description}>{lesson.description}</Text>
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#e5286a',
+    backgroundColor: '#fb2576',
     padding: 15,
     borderRadius: 10,
     marginBottom: 20,
     elevation: 3,
-  
   },
   title: {
     fontSize: 16,

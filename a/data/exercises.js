@@ -3,7 +3,7 @@ export const exercises = [
     id: '1',
     lessonId: '1',
     title: '👋 Primeiro Componente',
-    description: 'Crie um componente que exiba uma mensagem de boas-vindas.',
+    description: 'Crie um componente básico React Native que exibe uma mensagem de boas-vindas.',
     description_detail: 'Use os componentes View e Text para criar a estrutura básica de um aplicativo que diga "Olá, React Native!".',
     code: `// Complete o código abaixo:
 
