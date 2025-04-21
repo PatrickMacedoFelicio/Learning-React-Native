@@ -4,12 +4,15 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 export default function SelectionScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>O que você deseja fazer?</Text>
+      <Text style={styles.title}>Aprenda 📚</Text>
+      <Text style={styles.texto}>alsdflasdlfasl lasflsdfals dfla sldfa slfals flas dfla sldf asldfl asldllsadflas</Text>
       <View style={styles.buttonContainer}>
-        <Button title="Aprender Conceitos" onPress={() => navigation.navigate('Lessons')} color="#1e90ff" />
+        <Button title="Aprender Conceitos" onPress={() => navigation.navigate('Lessons')}/>
       </View>
+      <Text style={styles.title}>Pratique 👨🏻‍💻</Text>
+      <Text style={styles.texto}>alsdflasdlfasl lasflsdfals dfla sldfa slfals flas dfla sldf asldfl asldllsadflas</Text>
       <View style={styles.buttonContainer}>
-        <Button title="Exercícios Práticos" onPress={() => navigation.navigate('Exercises')} color="#00c896" />
+        <Button title="Exercícios Práticos" onPress={() => navigation.navigate('Exercises')}/>
       </View>
     </View>
   );
@@ -18,20 +21,25 @@ export default function SelectionScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#121212',
     padding: 20,
   },
+  texto: {
+    fontSize: 16,
+    color: '#bbbbbb',
+    textAlign: 'justify',
+    marginBottom: 20,
+  },
   title: {
     fontSize: 22,
     fontWeight: 'bold',
-    marginBottom: 30,
+    marginBottom: 18,
     color: '#ffffff',
-    textAlign: 'center',
   },
   buttonContainer: {
     marginVertical: 10,
-    width: '80%',
+    width: '70%',
+    fontSize: 20,
   },
 });
