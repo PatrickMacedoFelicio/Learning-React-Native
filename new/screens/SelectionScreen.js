@@ -5,9 +5,10 @@ import ScreenWrapper from '../components/ScreenWrapper';
 export default function WelcomeScreen({ navigation }) {
   return (
     <ScreenWrapper>
-      <Text style={styles.title}>Bem-vindo ao App!</Text>
-      <Text style={styles.subtitle}>Escolha uma opção abaixo:</Text>
+      <Text style={styles.title}>Mini Tutorial de React Native</Text>
 
+      <Text style={styles.h2}>📒 Área de aprendizagem</Text>
+      <Text style={styles.subtitle}>Aprenda alguns dos conceitos mais utilizados em React Native!</Text>
       <View style={styles.buttonsContainer}>
         <TouchableOpacity
           style={styles.button}
@@ -15,7 +16,12 @@ export default function WelcomeScreen({ navigation }) {
         >
           <Text style={styles.buttonText}>Acessar Lições</Text>
         </TouchableOpacity>
+      </View>
 
+      <Text style={styles.h2}>🧠 Teste seu conhecimento</Text>
+      <Text style={styles.subtitle}>Esoolha alguns cards e teste seu conhecimento adiquirido resolvendo alguns desafios de códigos.</Text>
+
+      <View style={styles.buttonsContainer}>
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('Exercises')}
@@ -32,15 +38,24 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     color: '#ffffff',
-    marginBottom: 10,
+    marginBottom: 30,
+    textAlign: 'center'
   },
   subtitle: {
     fontSize: 16,
     color: '#cccccc',
     marginBottom: 20,
+    textAlign: 'justify'
+  },
+  h2: {
+    fontSize: 18,
+    color: '#ffffff',
+    marginBottom: 10,
+    fontWeight: 'bold',
   },
   buttonsContainer: {
     gap: 15,
+    marginBottom: 16,
   },
   button: {
     backgroundColor: '#f13678',

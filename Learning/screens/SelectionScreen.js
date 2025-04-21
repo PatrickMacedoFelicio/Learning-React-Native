@@ -1,56 +1,84 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import ScreenWrapper from '../components/ScreenWrapper';
 
-export default function SelectionScreen({ navigation }) {
+export default function WelcomeScreen({ navigation }) {
   return (
-    <View style={styles.wrapper}>
-      <Header />
-      <View style={styles.container}>
-        <Text style={styles.title}>O que você deseja fazer?</Text>
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Lessons')}>
-          <Text style={styles.buttonText}>Aprender Conceitos</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Exercises')}>
-          <Text style={styles.buttonText}>Exercícios Práticos</Text>
+    <ScreenWrapper>
+      <Text style={styles.title}>Mini Tutorial de React Native</Text>
+
+      <Text style={styles.h2}>📒 Área de aprendizagem</Text>
+      <Text style={styles.subtitle}>Aprenda alguns dos conceitos mais utilizados em React Native!</Text>
+      <View style={styles.buttonsContainer}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate('Lessons')}
+        >
+          <Text style={styles.buttonText}>Acessar Lições</Text>
         </TouchableOpacity>
       </View>
-      <Footer />
-    </View>
+
+      <Text style={styles.h2}>🧠 Teste seu conhecimento</Text>
+      <Text style={styles.subtitle}>Esoolha alguns cards e teste seu conhecimento adiquirido resolvendo alguns desafios de códigos.</Text>
+
+      <View style={styles.buttonsContainer}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate('Exercises')}
+        >
+          <Text style={styles.buttonText}>Ver Exercícios</Text>
+        </TouchableOpacity>
+      </View>
+
+      <Text style={styles.h2}>✅ Quiz!</Text>
+      <Text style={styles.subtitle}>Teste seus conhecimentos respondendo algumas perguntas!</Text>
+
+      <View style={styles.buttonsContainer}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate('Quiz')}
+        >
+          <Text style={styles.buttonText}>Quiz</Text>
+        </TouchableOpacity>
+      </View>
+    </ScreenWrapper>
   );
 }
 
 const styles = StyleSheet.create({
-  wrapper: {
-    flex: 1,
-    backgroundColor: '#121212',
-  },
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-  },
   title: {
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 30,
     color: '#ffffff',
-    textAlign: 'center',
+    marginBottom: 30,
+    textAlign: 'center'
+  },
+  subtitle: {
+    fontSize: 16,
+    color: '#cccccc',
+    marginBottom: 20,
+    textAlign: 'justify'
+  },
+  h2: {
+    fontSize: 18,
+    color: '#ffffff',
+    marginBottom: 10,
+    fontWeight: 'bold',
+  },
+  buttonsContainer: {
+    gap: 15,
+    marginBottom: 16,
   },
   button: {
-    backgroundColor: '#1e90ff',
-    paddingVertical: 15,
-    paddingHorizontal: 30,
-    borderRadius: 8,
-    marginVertical: 10,
-    width: '80%',
+    backgroundColor: '#f13678',
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 10,
     alignItems: 'center',
   },
   buttonText: {
     color: '#ffffff',
-    fontSize: 16,
     fontWeight: 'bold',
+    fontSize: 16,
   },
 });

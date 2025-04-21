@@ -26,7 +26,7 @@ export default function ExerciseDetailScreen({ route }) {
         {showSolution && (
           <View style={styles.solutionBox}>
             <Text style={styles.sectionTitle}>Correção:</Text>
-            <Text style={styles.code}>{exercise.solution}</Text>
+            <Text style={styles.code}>{exercise.answer}</Text>
           </View>
         )}
       </ScrollView>

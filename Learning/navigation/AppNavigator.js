@@ -1,3 +1,4 @@
+// navigation/AppNavigator.js
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -8,6 +9,7 @@ import LessonDetailScreen from '../screens/LessonDetailScreen';
 import DemoScreen from '../screens/DemoScreen';
 import ExercisesScreen from '../screens/ExercisesScreen';
 import ExerciseDetailScreen from '../screens/ExerciseDetailScreen';
+import QuizScreen from '../screens/QuizScreen'; // Certifique-se que o arquivo existe
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +23,7 @@ export default function AppNavigator() {
       <Stack.Screen name="Demo" component={DemoScreen} options={{ headerShown: false }} />
       <Stack.Screen name="Exercises" component={ExercisesScreen} options={{ headerShown: false }} />
       <Stack.Screen name="ExerciseDetail" component={ExerciseDetailScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Quiz" component={QuizScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }

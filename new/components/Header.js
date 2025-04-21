@@ -13,7 +13,7 @@ export default function Header() {
           <Ionicons name="arrow-back" size={24} color="#f13678" />
         </TouchableOpacity>
       )}
-      <Text style={styles.title}>Meu App</Text>
+      <Text style={styles.title}>React Native ⚛️</Text>
     </View>
   );
 }

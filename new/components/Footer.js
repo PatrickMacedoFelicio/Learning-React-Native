@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function Footer() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>© 2025 Mini Tutorial React Native</Text>
+      <Text style={styles.text}>© 2025 Patrick Macêdo Felicio</Text>
     </View>
   );
 }
@@ -12,7 +12,7 @@ export default function Footer() {
 const styles = StyleSheet.create({
   container: {
     padding: 10,
-    backgroundColor: '#1a1e29',
+    backgroundColor: '#1e1e1e',
     alignItems: 'center',
   },
   text: {
