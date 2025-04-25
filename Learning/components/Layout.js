@@ -21,10 +21,8 @@ export default function Layout({ children }) {
         <Text style={styles.headerText}>{route.name}</Text>
       </View>
 
-      {/* Content */}
       <View style={styles.content}>{children}</View>
 
-      {/* Footer */}
       <View style={styles.footer}>
         <Text style={styles.footerText}>Mini Tutorial React Native</Text>
       </View>

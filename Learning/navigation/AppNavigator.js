@@ -1,4 +1,3 @@
-// navigation/AppNavigator.js
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -6,10 +5,10 @@ import WelcomeScreen from '../screens/WelcomeScreen';
 import SelectionScreen from '../screens/SelectionScreen';
 import LessonsScreen from '../screens/LessonsScreen';
 import LessonDetailScreen from '../screens/LessonDetailScreen';
-import DemoScreen from '../screens/DemoScreen';
+import DemoScreen from '../screens/WelcomeScreen';
 import ExercisesScreen from '../screens/ExercisesScreen';
 import ExerciseDetailScreen from '../screens/ExerciseDetailScreen';
-import QuizScreen from '../screens/QuizScreen'; // Certifique-se que o arquivo existe
+import QuizScreen from '../screens/QuizScreen'; 
 
 const Stack = createNativeStackNavigator();
 
