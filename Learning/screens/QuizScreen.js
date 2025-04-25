@@ -1,26 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import ScreenWrapper from '../components/ScreenWrapper';
+import Questionario from '../data/questions';
 
-const Questionario = [
-    {
-        questao: 'O que é React Native?',
-        opcao: ['Uma linguagem de programação', 'Uma biblioteca de backend', 'Um framework para apps mobile', 'Um sistema operacional'],
-        resposata: 2
-    },
-    {
-        questao: 'Qual hook usamos para gerenciar estados em React?',
-        opcao: ['useEffect', 'useState', 'useContext', 'useRef'],
-        resposata: 1
-    },
-    {
-        questao: 'Qual desses é um componente básico do React Native?',
-        opcao: ['<Div>', '<View>', '<Section>', '<Container>'],
-        resposata: 1
-    }
-];
-
-export default function QuizScreen() {
+export default function QuizScreen({ navigation }) {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [showScore, setShowScore] = useState(false);
@@ -41,7 +24,7 @@ export default function QuizScreen() {
         <ScreenWrapper style={styles.container}>
             {showScore ? (
                 <View style={styles.buttonsContainer}>
-                    <Text style={styles.textoAcerto}>Você acertou {score} de {Questionario.length} questões!</Text>,
+                    <Text style={styles.textoAcerto}>Você acertou {score} de {Questionario.length} questões!</Text>
                     <TouchableOpacity
                         style={styles.button}
                         onPress={() => navigation.navigate('Selection')}
@@ -70,9 +53,8 @@ export default function QuizScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#1a1e29',
-        padding: 20,
         backgroundColor: '#121212',
+        padding: 20,
         justifyContent: 'space-between',
     },
     question: {
